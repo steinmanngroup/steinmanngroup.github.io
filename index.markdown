@@ -1,13 +1,6 @@
 ---
-layout: post
-twitter-username: csteinmann
+layout: home
 ---
-What is this?
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+![alt text](/assets/img/splash.png "Logo Title Text 1")
+The Steinmann Group is part of [Applied Supramolecular Chemistry](https://www.en.bio.aau.dk/research/applied-supramolecual-chemistry/) at Aalborg University.
+We have three areas of focus which are <em>Inclusion Complexes</em>, <em>Light-Matter Interaction</em> and <em>Exploration of Chemical Space</em>, the latter with a special focus on machine-learning techniques.

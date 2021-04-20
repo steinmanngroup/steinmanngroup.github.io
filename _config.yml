@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Form and function of inclusion complexes, light-matter interaction and application of machine learning methods to investigate chemical space with a special focus on drug-design.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://steinmanngroup.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: csteinmann
+twitter_username: caspersteinmann
 github_username:  steinmanngroup
 
 # Build settings
