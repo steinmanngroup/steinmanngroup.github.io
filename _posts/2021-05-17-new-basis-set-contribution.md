@@ -9,7 +9,7 @@ I took [Stephan Sauer's](https://sites.google.com/site/spasauer) course on Molec
 I passed the course but did not finish the project.
 Until now.
 
-![alt text](/assets/img/aug-cc-pvtz-j_toc.png "Table of Contents")
+![alt text](/assets/img/aug-cc-pvtz-j-toc.png "Table of Contents")
 
 In this recent contribution, we add [optimized basis sets for calculation of particularly spin-spin coupling constants for the p-block fourth row elements Ga, Ge, As, Se and Br](https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/mrc.5166).
 
