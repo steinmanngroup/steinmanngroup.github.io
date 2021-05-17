@@ -2,7 +2,7 @@
 layout: post
 author: Casper Steinmann
 title: The aug‐cc‐pVTZ‐J basis set for the p‐block fourth‐row elements Ga, Ge, As, Se, and Br
-splash_path: /assets/img/toc.png
+splash_path: /assets/img/aug-cc-pvtz-j-toc_splash.png
 ---
 A project that started more than 10 years ago is now complete.
 I took [Stephan Sauer's](https://sites.google.com/site/spasauer) course on Molecular Electromagnetic Properties which is [online](https://www.youtube.com/playlist?list=PL_Jxd1JMsQnMakaWU-4bOb1v1bSatsfvb) and we had to do a student project as part of the exam.
