@@ -4,7 +4,7 @@ author: Casper Steinmann
 title: Graphics in Blender for Chemistry
 splash_path: /assets/img/graphics_in_blender_splash.png
 ---
-I have recently found [a series of interesting Youtube videos](https://twitter.com/bradyajohnston) by [Brady Johnston](https://twitter.com/bradyajohnston) on generating high-quality graphics for (bio-)chemistry and related fields in a 3D program called [blender](http://www.blender.org).
+I have recently found [a series of interesting Youtube videos](https://www.youtube.com/bradyjohnston) by [Brady Johnston](https://twitter.com/bradyajohnston) on generating high-quality graphics for (bio-)chemistry and related fields in a 3D program called [blender](http://www.blender.org).
 From my perspective, the whole thing that made it click was the possibility of importing molecular structures from either PyMol or [ChimeraX](https://www.rbvi.ucsf.edu/chimerax/) and at least somewhat easier to work with.
 
 ![Cholesterol bound to Cyclodextrin](/assets/img/graphics_in_blender.jpg "cholesterol bound to cyclodextrin")
