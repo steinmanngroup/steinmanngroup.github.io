@@ -1,11 +1,119 @@
-.posts-table {
-    margin: 40px 0 0 0;
+// -------------------------------------------------------
+// Hero image on homepage
+// -------------------------------------------------------
+.home-splash {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin-bottom: $spacing-unit;
+  border-radius: 3px;
 }
 
-.post-splash {
-    float: left;
-    width: 33%;
-    box-sizing: border-box;
-    padding: 0 30px;
-    height:450px;
+// -------------------------------------------------------
+// Featured (most recent) post on homepage
+// -------------------------------------------------------
+.post-featured {
+  margin: $spacing-unit 0;
+  padding: ($spacing-unit * 0.75) $spacing-unit;
+  border-left: 4px solid $grey-color-light;
+
+  .post-meta {
+    display: block;
+    margin-bottom: calc(#{$spacing-unit} / 4);
+  }
+}
+
+.post-featured__title {
+  margin-top: calc(#{$spacing-unit} / 4);
+  margin-bottom: calc(#{$spacing-unit} / 4);
+
+  .post-link {
+    @include relative-font-size(1.375);
+  }
+}
+
+.post-featured__excerpt {
+  margin-bottom: calc(#{$spacing-unit} / 2);
+  color: $text-color;
+}
+
+.post-featured__readmore {
+  @include relative-font-size(0.9375);
+  font-style: italic;
+}
+
+// -------------------------------------------------------
+// Post list (older posts) on homepage
+// -------------------------------------------------------
+.post-list {
+  margin-left: 0;
+  list-style: none;
+}
+
+.post-list__item {
+  display: flex;
+  align-items: flex-start;
+  gap: calc(#{$spacing-unit} / 2);
+  padding: calc(#{$spacing-unit} * 0.6) 0;
+  border-top: 1px solid $grey-color-light;
+
+  &:last-child {
+    border-bottom: 1px solid $grey-color-light;
+  }
+}
+
+.post-list__meta {
+  flex: 0 0 110px;
+  padding-top: 3px;
+
+  .post-meta {
+    white-space: nowrap;
+  }
+}
+
+.post-list__thumb {
+  flex: 0 0 80px;
+
+  img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    display: block;
+    border-radius: 2px;
+  }
+}
+
+.post-list__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.post-list__title {
+  margin-bottom: calc(#{$spacing-unit} / 6);
+
+  .post-link {
+    @include relative-font-size(1.125);
+  }
+}
+
+.post-list__excerpt {
+  margin-bottom: 0;
+  @include relative-font-size(0.9375);
+  color: $grey-color;
+}
+
+@include media-query($on-palm) {
+  .post-list__item {
+    flex-wrap: wrap;
+  }
+
+  .post-list__meta {
+    flex: 0 0 100%;
+  }
+
+  .post-list__thumb {
+    flex: 0 0 60px;
+  }
 }

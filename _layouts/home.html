@@ -7,43 +7,57 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
+  {%- if page.hero_image -%}
+    <img class="home-splash" src="{{ page.hero_image }}" alt="{{ page.hero_alt | default: '' }}" />
+  {%- endif -%}
+
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-  <hr>
-    <h2 class="post-list-heading">{{ page.list_title | default: "Most Recent Post" }}</h2>
-    {%- for post in site.posts limit:1 -%}
-    <div>
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <span class="post-meta">{{ post.date | date: date_format }}</span>
-    <h3>
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
-      </a>
-    </h3>
-    <div class="post-content">
-      {{ post.content }}
-    </div>
-    </div>
-    {%- endfor -%}
     <hr>
-    <h2 class="post-list-heading">{{ page.list_title | default: "Older Posts" }}</h2>
-    <div class="posts-table">
-      {%- for post in site.posts offset:1 -%}
-      <div class="post-splash">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <div>
-           <img src="{{ post.splash_path }}" alt="" />
-        </div>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
+    <h2 class="post-list-heading">{{ page.list_title | default: "Recent Posts" }}</h2>
+
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {%- assign latest_post = site.posts.first -%}
+    <div class="post-featured">
+      <span class="post-meta">{{ latest_post.date | date: date_format }}</span>
+      <h3 class="post-featured__title">
+        <a class="post-link" href="{{ latest_post.url | relative_url }}">
+          {{ latest_post.title | escape }}
+        </a>
+      </h3>
+      <div class="post-featured__excerpt">
+        {{ latest_post.excerpt }}
       </div>
-      {%- endfor -%}
+      <a class="post-featured__readmore" href="{{ latest_post.url | relative_url }}">Read more &rarr;</a>
     </div>
+
+    {%- if site.posts.size > 1 -%}
+      <ul class="post-list">
+        {%- for post in site.posts offset:1 -%}
+        <li class="post-list__item">
+          <div class="post-list__meta">
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+          </div>
+          {%- if post.splash_path -%}
+          <div class="post-list__thumb">
+            <a href="{{ post.url | relative_url }}">
+              <img src="{{ post.splash_path }}" alt="" />
+            </a>
+          </div>
+          {%- endif -%}
+          <div class="post-list__body">
+            <h3 class="post-list__title">
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            <p class="post-list__excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+          </div>
+        </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
   {%- endif -%}
 
 </div>
