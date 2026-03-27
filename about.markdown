@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-The Steinmann Group is led by Associate Professor Casper Steinmann in Computational Drug Discovery and Formulation at the [Department of Physics, Chemistry and Pharmacy (FKF)](https://fkf.sdu.dk), University of Southern Denmark. We are also affiliated with the [Center for Pharmaceutical Data Science Education (CPDSE)](https://www.cpdse.dk/), a joint initiative between SDU and the University of Copenhagen.
+The Steinmann Group is led by [Associate Professor Casper Steinmann](https://portal.findresearcher.sdu.dk/en/persons/steinmann) in Computational Drug Discovery and Formulation at the [Department of Physics, Chemistry and Pharmacy (FKF)](https://fkf.sdu.dk), University of Southern Denmark. We are also affiliated with the [Center for Pharmaceutical Data Science Education (CPDSE)](https://www.cpdse.dk/), a joint initiative between SDU and the University of Copenhagen.
 
 Our research sits at the intersection of quantum chemistry, molecular simulation, and data-driven science. We develop and apply computational methods to understand molecular binding, predict chemical synthesizability, and accelerate drug discovery.
 
