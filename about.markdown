@@ -29,3 +29,4 @@ Casper Steinmann holds a PhD from the University of Copenhagen. Prior to joining
 **Department:** [FKF, University of Southern Denmark](https://fkf.sdu.dk)
 **GitHub:** [steinmanngroup](https://github.com/steinmanngroup)
 **X:** [@caspersteinmann](https://x.com/caspersteinmann)
+**SDU Research Profile:** [findresearcher.sdu.dk](https://portal.findresearcher.sdu.dk/en/persons/steinmann)
