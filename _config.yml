@@ -35,8 +35,8 @@ collections:
 
 # Navigation order
 header_pages:
-  - about.md
   - group.md
+  - about.md
 
 # Build settings
 theme: minima
