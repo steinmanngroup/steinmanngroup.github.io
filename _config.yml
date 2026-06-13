@@ -27,6 +27,17 @@ url: "http://steinmanngroup.github.io" # the base hostname & protocol for your s
 twitter_username: caspersteinmann
 github_username:  steinmanngroup
 
+# Collections
+collections:
+  members:
+    output: true
+    permalink: /group/:name/
+
+# Navigation order
+header_pages:
+  - about.md
+  - group.md
+
 # Build settings
 theme: minima
 plugins:
