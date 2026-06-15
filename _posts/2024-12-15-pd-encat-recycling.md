@@ -4,7 +4,7 @@ author: Casper Steinmann
 title: "Pd EnCat™ 30 Recycling in Suzuki Cross-Coupling Reactions"
 ---
 
-A new paper co-authored with postdoc Laura D'Andrea has been published in [*Organics* (MDPI)](https://doi.org/10.3390/org5040023), stemming from work supported by VILLUM FONDEN (grant 50405).
+A new paper co-authored with postdoc [Laura d'Andrea](/group/laura-danrea/) has been published in [*Organics* (MDPI)](https://doi.org/10.3390/org5040023), stemming from work supported by VILLUM FONDEN (grant 50405).
 
 Pd EnCat™ 30 is a widely used encapsulated palladium catalyst valued for its high performance, easy recovery, and reusability in hydrogenation and cross-coupling reactions. Despite these attractive properties, published recyclability data for Suzuki coupling reactions had been limited to only a handful of cycles — leaving its full potential unexplored.
 
