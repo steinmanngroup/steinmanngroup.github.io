@@ -4,7 +4,7 @@ title: Group
 permalink: /group/
 ---
 
-{% assign active_members = site.members | where_exp: "m", "m.active" %}
+{% assign active_members = site.members | where: "active", true %}
 {% if active_members.size > 0 %}
 ## Current Members
 
@@ -13,7 +13,7 @@ permalink: /group/
 {% endfor %}
 {% endif %}
 
-{% assign former_members = site.members | where_exp: "m", "m.active == false" %}
+{% assign former_members = site.members | where: "active", false %}
 {% if former_members.size > 0 %}
 ## Former Members
 
