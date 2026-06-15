@@ -2,7 +2,7 @@
 layout: page
 title: Laura d'Andrea
 role: postdoc
-active: true
+active: false
 period: "2022-2024"
 ---
 
